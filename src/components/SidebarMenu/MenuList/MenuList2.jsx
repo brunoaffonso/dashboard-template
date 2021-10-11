@@ -10,10 +10,11 @@ import DescriptionOutlined from '@material-ui/icons/DescriptionOutlined';
 import BuildOutlined from '@material-ui/icons/BuildOutlined';
 
 export default function MenuList() {
-  const [active, setActive] = React.useState(false);
+  const [menu, setMenu] = React.useState('');
 
-  function handleClick(e) {
+  function handleClick(e, item) {
     e.preventDefault();
+    setMenu(item);
   }
 
   return (
@@ -28,7 +29,11 @@ export default function MenuList() {
           <DescriptionOutlined fontSize="large" />
           <TextItem>Contratos</TextItem>
         </MenuListItem>
-        <MenuListItem onClick={(e) => handleClick(e)}>
+        <MenuListItem
+          onClick={(e) => handleClick(e, 'materiais')}
+          active={menu === 'materiais'}
+          href="/api/hello"
+        >
           <BuildOutlined fontSize="large" />
           <TextItem>Materiais</TextItem>
         </MenuListItem>
