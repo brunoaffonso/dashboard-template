@@ -27,7 +27,7 @@ export default function ChatsTest() {
       <LineChart
         width={900}
         height={500}
-        data={data.slice(0, 35)}
+        data={data.slice(0, 10)}
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
@@ -35,7 +35,6 @@ export default function ChatsTest() {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="money" stroke="#8884d8" />
         <Line type="monotone" dataKey="number" stroke="#82ca9d" />
       </LineChart>
     </>

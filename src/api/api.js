@@ -2,12 +2,7 @@ import axios from 'axios';
 
 export async function getDataFake() {
   const res = await axios.get(
-    'https://mocki.io/v1/d8228d05-4b68-46a2-bf68-a3ba0e41cd3a',
-    {
-      params: {
-        limit: 10,
-      },
-    }
+    'https://mocki.io/v1/d8228d05-4b68-46a2-bf68-a3ba0e41cd3a'
   );
   return res.data;
 }
