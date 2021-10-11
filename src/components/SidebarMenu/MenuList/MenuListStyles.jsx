@@ -13,6 +13,7 @@ export const MenuListContent = styled.div`
   font-weight: bold;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
   border-bottom: 1px solid lightgray;
 `;
 

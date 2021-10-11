@@ -8,7 +8,7 @@ export const Topbar = styled.div`
   padding: 15px 0;
   z-index: 999;
   background: #fff;
-  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 0px 5px #7d7d7d;
 `;
 
 export const DashboardContent = styled.div`
@@ -18,17 +18,18 @@ export const DashboardContent = styled.div`
 
 export const Sidebar = styled.div`
   flex: 1;
-  position: sticky;
+  position: fixed;
   display: flex;
-  top: 55px;
-  left: 0;
   height: calc(100vh - 55px);
   min-width: 260px;
+  background: #fff;
+  box-shadow: 1px 0px 5px #7d7d7d;
 `;
 
 export const Content = styled.div`
   flex: 5;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: flex-end;
+  margin-left: 260px;
 `;
