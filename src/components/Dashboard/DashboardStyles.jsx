@@ -19,6 +19,7 @@ export const DashboardContent = styled.div`
 export const Sidebar = styled.div`
   flex: 1;
   position: sticky;
+  display: flex;
   top: 55px;
   left: 0;
   height: calc(100vh - 55px);
