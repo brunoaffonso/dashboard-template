@@ -21,7 +21,7 @@ export const Sidebar = styled.div`
   position: fixed;
   display: flex;
   height: calc(100vh - 55px);
-  min-width: 260px;
+  min-width: 16%;
   background: #fff;
   box-shadow: 1px 0px 5px #7d7d7d;
 `;
@@ -31,5 +31,5 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 260px;
+  margin-left: 16%;
 `;
