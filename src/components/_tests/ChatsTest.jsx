@@ -28,10 +28,10 @@ export default function ChatsTest() {
   return (
     <>
       <ChartResponsive>
-        <ResponsiveContainer>
+        <ResponsiveContainer height={'99%'} width={'99%'}>
           <LineChart
-            width={900}
-            height={500}
+            // width={900}
+            // height={500}
             data={data.slice(0, 10)}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
