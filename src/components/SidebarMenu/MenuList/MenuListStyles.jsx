@@ -3,14 +3,13 @@ import styled from '@emotion/styled';
 export const MenuTitle = styled.div`
   color: #7d7d7d;
   text-align: left;
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 10px;
 `;
 
 export const MenuListContent = styled.div`
   text-align: left;
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
@@ -22,7 +21,7 @@ export const MenuListItem = styled.a`
   flex-direction: row;
   align-items: center;
   color: ${(props) => (props.active ? '#fff' : '#7d7d7d')};
-  margin: 20px 0px;
+  margin: 10px 0px;
   list-style: none;
   cursor: pointer;
   border-radius: 5px;

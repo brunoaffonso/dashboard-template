@@ -18,18 +18,31 @@ export const DashboardContent = styled.div`
 
 export const Sidebar = styled.div`
   flex: 1;
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   height: calc(100vh - 55px);
-  min-width: 16%;
+  /* min-width: 200px; */
   background: #fff;
   box-shadow: 1px 0px 5px #7d7d7d;
+  margin-right: 5px;
+
+  ${(props) => (props.open ? console.log('aberto') : console.log('fechado'))};
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Content = styled.div`
-  flex: 5;
+  flex: 7;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 16%;
+  /* margin-left: 200px; */
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+
+  /* @media (max-width: 768px) {
+    margin-left: auto;
+  } */
 `;

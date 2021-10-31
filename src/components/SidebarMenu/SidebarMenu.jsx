@@ -2,7 +2,7 @@ import MenuList from './MenuList/MenuList';
 import MenuList2 from './MenuList/MenuList2';
 import { SidebarContent } from './SidebarMenuStyles';
 
-export default function SideBar() {
+export default function SideBarMenu() {
   return (
     <SidebarContent>
       <MenuList></MenuList>

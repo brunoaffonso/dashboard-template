@@ -1,27 +1,39 @@
+import React from 'react';
 import MainContent from '../MainContent/MainContent';
 import SidebarMenu from '../SidebarMenu/SidebarMenu';
 import TopbarMenu from '../TopbarMenu/TopbarMenu';
 import FooterContent from '../FooterContent/FooterContent';
-import { Topbar, DashboardContent, Content, Sidebar } from './DashboardStyles';
-import { SidebarState } from '../Contexts/GlobalContexts';
+import {
+  Topbar,
+  DashboardContent,
+  Content,
+  Sidebar,
+  SidebarToggle,
+} from './DashboardStyles';
+import { GlobalContexts } from '../Contexts/GlobalContexts';
 
 export default function Dashboard() {
+  const globalState = React.useContext(GlobalContexts);
+
   return (
     <>
-      <SidebarState>
-        <Topbar>
-          <TopbarMenu></TopbarMenu>
-        </Topbar>
-        <DashboardContent>
-          <Sidebar>
+      <Topbar>
+        <TopbarMenu></TopbarMenu>
+      </Topbar>
+      <DashboardContent>
+        {/* {globalState.sidebarOpen && (
+          <SidebarToggle>
             <SidebarMenu></SidebarMenu>
-          </Sidebar>
-          <Content>
-            <MainContent></MainContent>
-            <FooterContent></FooterContent>
-          </Content>
-        </DashboardContent>
-      </SidebarState>
+          </SidebarToggle>
+        )} */}
+        <Sidebar open={globalState.sidebarOpen}>
+          <SidebarMenu></SidebarMenu>
+        </Sidebar>
+        <Content>
+          <MainContent></MainContent>
+          <FooterContent></FooterContent>
+        </Content>
+      </DashboardContent>
     </>
   );
 }

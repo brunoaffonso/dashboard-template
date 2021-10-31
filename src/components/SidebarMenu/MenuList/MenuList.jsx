@@ -25,14 +25,14 @@ export default function MenuList() {
           onClick={(e) => handleClick(e, 'dashboard')}
           active={menu === 'dashboard'}
         >
-          <DashboardOutlined fontSize="large" />
+          <DashboardOutlined />
           <TextItem>Dashboard</TextItem>
         </MenuListItem>
         <MenuListItem
           onClick={(e) => handleClick(e, 'contratos')}
           active={menu == 'contratos'}
         >
-          <DescriptionOutlined fontSize="large" />
+          <DescriptionOutlined />
           <TextItem>Contratos</TextItem>
         </MenuListItem>
         <MenuListItem
@@ -40,7 +40,7 @@ export default function MenuList() {
           active={menu === 'materiais'}
           href="/api/hello"
         >
-          <BuildOutlined fontSize="large" />
+          <BuildOutlined />
           <TextItem>Materiais</TextItem>
         </MenuListItem>
       </MenuListContent>

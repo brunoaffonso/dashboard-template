@@ -20,4 +20,5 @@ export const CardBody = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-self: center;
+  width: 100%;
 `;

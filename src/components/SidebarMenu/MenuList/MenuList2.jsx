@@ -22,11 +22,11 @@ export default function MenuList() {
       <MenuTitle>Relatórios</MenuTitle>
       <MenuListContent>
         <MenuListItem href="/api/hello">
-          <DashboardOutlined fontSize="large" />
+          <DashboardOutlined />
           <TextItem>Dashboard</TextItem>
         </MenuListItem>
         <MenuListItem onClick={(e) => handleClick(e)}>
-          <DescriptionOutlined fontSize="large" />
+          <DescriptionOutlined />
           <TextItem>Contratos</TextItem>
         </MenuListItem>
         <MenuListItem
@@ -34,7 +34,7 @@ export default function MenuList() {
           active={menu === 'materiais'}
           href="/api/hello"
         >
-          <BuildOutlined fontSize="large" />
+          <BuildOutlined />
           <TextItem>Materiais</TextItem>
         </MenuListItem>
       </MenuListContent>

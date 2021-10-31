@@ -1,20 +1,29 @@
 import React from 'react';
 import { GlobalContexts } from '../Contexts/GlobalContexts';
-import { TopbarContent, TopbarLeft, TopbarRight, Logo } from './TopbarStyles';
+import {
+  TopbarContent,
+  TopbarLeft,
+  TopbarRight,
+  Logo,
+  ToggleButton,
+} from './TopbarStyles';
+import DehazeOutlined from '@material-ui/icons/DehazeOutlined';
 
 export default function TopBar() {
   const globalState = React.useContext(GlobalContexts);
 
   function handleClick() {
-    globalState.setSidebarState(!globalState.sidebarState);
-    console.log(globalState.sidebarState);
+    globalState.setSidebarOpen(!globalState.sidebarOpen);
+    console.log(globalState.sidebarOpen);
   }
 
   return (
     <TopbarContent>
       <TopbarLeft>
+        <ToggleButton>
+          <DehazeOutlined onClick={handleClick} />
+        </ToggleButton>
         <Logo>Cogic</Logo>
-        <button onClick={handleClick}>Mudar estado</button>
       </TopbarLeft>
       <TopbarRight>User</TopbarRight>
     </TopbarContent>
