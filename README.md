@@ -30,6 +30,7 @@ Building and running the project in your local dev environment is very easy. Be 
 <div>
 <a href="https://reactjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" width="40" height="40"/></a>
 <a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Material UI" width="80" height="40"/></a>
+<a href="https://reactjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/styled-components-1.svg" alt="Material UI" width="80" height="40"/></a>
 </div>
 
 ## License
