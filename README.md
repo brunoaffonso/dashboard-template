@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Template
+![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Development-yellow)
 
-## Getting Started
+## Description
+This project is a dashboard, builded in NextJS. It was made from scratch.  To style, was used Styled Components.
 
-First, run the development server:
+## Project in Action
+This project is hosted in Vercel
+[Live demo](https://dashboard-cogic.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Installation
+Building and running the project in your local dev environment is very easy. Be sure you have [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/) installed, then follow the directions below.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the source code. 
+	`git clone https://github.com/brunoaffonso/dashboard-template.git`
+	
+2. Install development dependencies.
+	`yarn install` or `npm install`
+	
+3. Run a local development server.
+	`yarn dev` or `npm run dev`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Project pendences
+- `Card Component`: Implement JWT authentication
+- `Charts Components`
+- `D3 Library implements`
+- `bugs`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies
+<div>
+<a href="https://reactjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" width="40" height="40"/></a>
+<a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Material UI" width="80" height="40"/></a>
+</div>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## License
+![Badge em Desenvolvimento](https://img.shields.io/badge/Licence-MIT-green)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Project developed for learning purposes.**
+	
